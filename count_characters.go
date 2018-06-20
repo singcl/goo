@@ -11,6 +11,8 @@ func main() {
 	fmt.Printf("The number of characters in string str1 is %d\n", utf8.RuneCountInString(str1))
 
 	str2 := "こん"
+	// 返回字节数
 	fmt.Printf("The number of bytes in string str2 is %d\n", len(str2))
+	// 返回字符数
 	fmt.Printf("The number of characters in string str2 is %d", utf8.RuneCountInString(str2))
 }
