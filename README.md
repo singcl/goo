@@ -13,3 +13,11 @@ https://www.jianshu.com/p/5ee783bbdcac
 ### VScode Go 环境搭建
 
 https://www.cnblogs.com/Leo_wl/p/8242628.html
+
+### <<GO入门指南>>
+
+https://github.com/Unknwon/the-way-to-go_ZH_CN
+
+### JS深入系列
+
+https://github.com/mqyqingfeng/Blog

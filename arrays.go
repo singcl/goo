@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	var k, v *int
 	var a [5]int
 	fmt.Println("emp:", a)
 
