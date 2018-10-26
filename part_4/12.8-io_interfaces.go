@@ -16,5 +16,4 @@ func main() {
 	// and now so does buf.
 	fmt.Fprintf(buf, "%s\n", "hello world! - buffered")
 	buf.Flush()
-
 }
