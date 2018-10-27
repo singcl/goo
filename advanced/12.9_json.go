@@ -27,11 +27,11 @@ func main() {
 	// go 常用占位符的含义 @see https://studygolang.com/articles/2644
 	// fmt.Printf("%v: \n", vc) // {Jan Kersschot [0x126d2b80 0x126d2be0] none}
 
-	// JSON format:
+	// 方法一：json.Marshal 序列化go数据结构为json
 	js, _ := json.Marshal(vc)
 	fmt.Printf("JSON format: %s", js)
 
-	// using an encoder:
+	// 方法二：json.NewEncoder，enc.Encode 序列化go数据结构为json 并写入文件
 	fp, _ := os.OpenFile("vcard.json", os.O_CREATE|os.O_WRONLY, 0666)
 	defer fp.Close()
 
