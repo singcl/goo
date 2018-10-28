@@ -24,4 +24,8 @@ func main() {
 	// Spaces are added between operands when neither is a string
 	// 当两个字符串都不存在时，在操作数之间添加空格。
 	fmt.Print(x)
+
+	// 字符串强制转换为byte 切片
+	b := []byte(`{"Name": "Wednesday", "Age": 6, "Parents": ["Gomez", "Morticia"]}`)
+	fmt.Print(b)
 }
