@@ -15,8 +15,8 @@ type User struct {
 	Status Status
 }
 
-
 // json数据反序列化
+
 // UnMarshal() 的函数签名是 func Unmarshal(data []byte, v interface{}) error 把 JSON 解码为数据结构。
 func main() {
 	/* 自己写的一个简单的Python web 服务器 返回一个json 数据 */
