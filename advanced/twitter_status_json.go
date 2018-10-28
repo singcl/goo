@@ -19,8 +19,8 @@ type User struct {
 // json数据反序列化
 // UnMarshal() 的函数签名是 func Unmarshal(data []byte, v interface{}) error 把 JSON 解码为数据结构。
 func main() {
-	/* perform an HTTP request for the twitter status of user: Googland */
-	res, _ := http.Get("http://twitter.com/users/Googland.json") /*http://twitter.com/users/Googland.json页面不存在了*/
+	/* 自己写的一个简单的Python web 服务器 返回一个json 数据 */
+	res, _ := http.Get("http://127.0.0.1:8080/")
 	/* initialize the structure of the JSON response */
 	user := User{Status{""}}
 	/* unmarshal the JSON into our structures */
@@ -31,6 +31,5 @@ func main() {
 }
 
 /* Output:
-status: Robot cars invade California, on orders from Google:
-Google has been testing self-driving cars ... http://bit.ly/cbtpUN http://retwt.me/97p
+status: This is the Go Json Text: Use Python SimpleHTTPServer build
 */
