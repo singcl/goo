@@ -15,7 +15,7 @@ type Address struct {
 type VCard struct {
 	FirstName string
 	LastName  string
-	Address   []*Address
+	Addresses []*Address
 	Remark    string
 }
 
