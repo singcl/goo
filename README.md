@@ -24,9 +24,11 @@ https://github.com/mqyqingfeng/Blog
 
 ### go
 
-貌似 import 不能 import 相对路径--网上很多文章都说可以？？the-way-to-go 实例中也说可以？？
+~~貌似 import 不能 import 相对路径--网上很多文章都说可以？？the-way-to-go 实例中也说可以？？~~
 
-只能 import 绝对路径--即现在$GOPATH 的 src 下查找再在$GOROOT 的 src 下查找。
+~~只能 import 绝对路径--即现在$GOPATH 的 src 下查找再在$GOROOT 的 src 下查找。~~
+
+**/advanced/13.4_panic_package.go 中就使用了相对路径包。**
 
 一个文件夹下只能包含一个自定义的 package，但是一个 package 可以在这个文件夹下分成多个文件。
 
