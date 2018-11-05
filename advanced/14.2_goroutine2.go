@@ -9,6 +9,7 @@ func main() {
 	ch := make(chan string)
 	go sendData(ch)
 	go getData(ch)
+
 	time.Sleep(1e9)
 }
 
