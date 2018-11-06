@@ -11,6 +11,7 @@ func main() {
 	res := make([]float64 , N)
 	sem := make(chan Empty, N)
 
+	//在 for 循环中并行计算迭代可能带来很好的性能提升
 	for i, ix := range data {
 		go func(i int, ix float64) {
 			res[i] = doSomeThing(i, ix)
