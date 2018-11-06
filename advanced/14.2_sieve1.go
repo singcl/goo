@@ -5,6 +5,11 @@ package main
 
 import "fmt"
 
+//Generate产生2-N的序列依次写入chan，main中循环第一次读到2，然后调用Filter(ch, ch1, 2)，这个Filter读取3-N，并从中删除2的倍数的数，将它输出到ch1，
+//注意ch = ch1这一行，此时main中的ch的输入是第一轮循环中的Filter的输出，即过滤掉2的倍数的数的序列。
+//第二轮循环开始时，ch序列是3,5,7,9,11,13,15,.....，先输出3，然后删除这个序列中3的倍数，将输出串联到下一次循环的输入。
+//一个删除了所有比它小的素数的倍数的数的序列，就是一个素数序列。
+
 // Send the sequence 2, 3, 4, ... to channel 'ch'.
 func generate(ch chan int) {
 	for i := 2; ; i++ {
