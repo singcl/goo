@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 	"io"
+	"fmt"
 )
 
 const form = `
@@ -16,7 +17,7 @@ const form = `
 
 /* handle a simple get request */
 func SimpleServer(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "<h1>Hello World</h1>")
+	w.Write([]byte("<h1>Hello World</h1>"))
 }
 
 func FormServer(w http.ResponseWriter, req *http.Request) {
@@ -35,7 +36,7 @@ func FormServer(w http.ResponseWriter, req *http.Request) {
 }
 
 func Home(w http.ResponseWriter, req *http.Request) {
-	io.WriteString(w, "<h1>Home</h1>")
+	fmt.Fprintf(w, "<h1>Home %s </h1>", req.Method)
 }
 
 func main() {
