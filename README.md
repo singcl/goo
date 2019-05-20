@@ -1,6 +1,6 @@
 ### 编译输出到指定目录
 
-$ go build -o ./exe/values.exe ./values.go
+\$ go build -o ./exe/values.exe ./values.go
 
 ### 实例来源
 
@@ -35,3 +35,5 @@ https://github.com/mqyqingfeng/Blog
 go install 有 main 包的 go 项目和 没有 main 包的 go 项目
 
 go install 不带参数可以直接在包所在的文件下执行 或者 go install + 包所在的文件夹名字 来安装
+
+### vscode GO 環境安裝 https://blog.csdn.net/wyy626562203/article/details/83833592
