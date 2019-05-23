@@ -37,3 +37,7 @@ go install 有 main 包的 go 项目和 没有 main 包的 go 项目
 go install 不带参数可以直接在包所在的文件下执行 或者 go install + 包所在的文件夹名字 来安装
 
 ### vscode GO 環境安裝 https://blog.csdn.net/wyy626562203/article/details/83833592
+
+### GO MODULES
+
+**wiki: https://github.com/golang/go/wiki/Modules**
