@@ -1,0 +1,4 @@
+# github.com/singcl/go-simple v0.0.0-20180723153429-d7baa159d1b2
+github.com/singcl/go-simple/pack1
+github.com/singcl/go-simple/sort
+github.com/singcl/go-simple/person
