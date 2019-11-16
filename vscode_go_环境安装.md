@@ -91,3 +91,8 @@ setting.json vscode 的配置文件
 launch.json 调试
 
 task.json 任务
+
+## 代理 GOPROXY
+
+-   https://goproxy.io
+-   https://goproxy.cn
