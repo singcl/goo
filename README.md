@@ -41,3 +41,18 @@ go install 不带参数可以直接在包所在的文件下执行 或者 go inst
 ### GO MODULES
 
 **wiki: https://github.com/golang/go/wiki/Modules**
+
+### GOPROXY 设置
+`golang.org`在国内无法访问，导致很多包下载不了。
+
+解决方法一：
+在github上找到镜像仓库clone到$GOPATH/src/golang.org/x/  下面然后 go install 自行安装。
+
+解决方式二：
+设置goproxy：https://goproxy.cn/
+
+```sh
+go env -w GOPROXY=https://goproxy.cn,direct
+echo "export GOPROXY=https://goproxy.cn" >> ~/.bash_profile    (MAC/LINUX)
+source ./.bash_profile
+```
