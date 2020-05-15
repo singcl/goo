@@ -1,4 +1,7 @@
+# github.com/go-redis/redis v6.15.2+incompatible
+## explicit
 # github.com/singcl/go-simple v0.0.0-20180723153429-d7baa159d1b2
+## explicit
 github.com/singcl/go-simple/pack1
-github.com/singcl/go-simple/sort
 github.com/singcl/go-simple/person
+github.com/singcl/go-simple/sort
