@@ -1,3 +1,15 @@
+# github.com/go-ego/cedar v0.10.1
+github.com/go-ego/cedar
+# github.com/go-ego/gpy v0.40.0
+## explicit
+github.com/go-ego/gpy
+github.com/go-ego/gpy/phrase
+# github.com/go-ego/gpy/tools/pinyin v0.0.0-20200825164427-a0a3e4acbcee
+## explicit
+# github.com/go-ego/gse v0.60.0
+## explicit
+github.com/go-ego/gse
+github.com/go-ego/gse/hmm
 # github.com/go-redis/redis v6.15.2+incompatible
 ## explicit
 # github.com/singcl/go-simple v0.0.0-20180723153429-d7baa159d1b2
@@ -5,3 +17,5 @@
 github.com/singcl/go-simple/pack1
 github.com/singcl/go-simple/person
 github.com/singcl/go-simple/sort
+# golang.org/x/sys v0.0.0-20200923182605-d9f96fdee20d
+## explicit
